@@ -17,7 +17,7 @@ data = np.random.normal(mean, std_dev, num_samples)
 
 # Display histogram
 st.header("Histogram of Generated Data")
-plt.hist(data, bins=30, density=True)
+plt.hist(data, bins=30, density=True, edgecolor = "k")
 plt.xlabel("Value")
 plt.ylabel("Frequency")
 st.pyplot(plt)
